@@ -1,0 +1,22 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "i dunno anymore",
+  "main": "./JS/NodeJS-test.js",
+  "devDependencies": {
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ./JS/NodeJS-test.js"
+  },
+  "author": "later",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
