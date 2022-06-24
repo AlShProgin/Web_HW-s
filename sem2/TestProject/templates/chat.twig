@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    {% if  title %} {{ title }}
+    {% else %}  Chat #{{ id }}
+    {% endif %}
+    </title>
+</head>
+<body>
+<a href="{{ path('app_loginPage') }}"><Button>Return</Button></a>
+{% if messages %}
+    <p><br>Messages:
+{% for message in messages %}
+    <br><b>{{ message.name }}</b>: {{ message.content }}
+{% endfor %}
+    </p>
+{% else %} <br>No messages
+{% endif %}
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Message list</title></head>
+<body>
+<h3>Create a profile </h3>
+<form action="/signIn" method="POST">
+    <br><input type="text" name="formSignIn_name" value="">
+    <br><input type="password" name="formSignIn_password" value="">
+    <br><input type="submit" name="b_formSignIn" value="Confirm">
+    <a href="{{ path('app_logoutPage') }}"><Button type="button">Return</Button></a>
+</form>
+    {% if warning %}
+        ERROR: {{ warning }}
+    {% endif %}
+</body>
+</html>
+

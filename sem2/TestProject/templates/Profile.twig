@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>Message list</title></head>
+<body>
+<h3>User: {{ username }}</h3>
+{% if records %}
+    <br>Previous names:
+    {% for record in records %} 
+        <br>{{ record.name }}
+    {% endfor %}
+{% endif %}
+{% if not change %}
+<form action="/Profile" method="POST">
+    <br><input type="submit" name="profile_submit" value="Change name">
+    <br><input type="submit" name="profile_submit" value="Change password">
+</form>
+<a href="{{ path('app_loginPage') }}"><Button type="button">Return</Button></a>
+{% endif %}
+    {% if change %}
+        <form action="/Profile" method="POST">
+	    {% if change.name %}
+	        <br><input type="text" name="profile_name" value=""> - new name
+	    {% endif %}
+	    {% if change.password %}
+	        <br><input type="password" name="profile_oldpassword" value=""> - old password
+	        <br><input type="password" name="profile_newpassword" value=""> - new password
+	    {% endif %}
+	    <br><input type="submit" name="profile_submit" value="Confirm">
+	</form>
+	<a href="{{ path('app_ProfilePage') }}"><Button type="button">Cancel</Button></a>
+    {% endif %}
+
+<br>{{ notification }}
+</body>
+</html>

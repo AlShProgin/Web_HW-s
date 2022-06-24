@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Message list</title></head>
+<body>
+<h2>Message Forum.WIP</h2>
+<h3>Log in to view your messages.</h3>
+    <form action="/loggedOut" method="POST">
+    <input type="text" name="FormAuth_Username" value="">
+    <br><input type="password" name="FormAuth_Password" value="">
+    <br><input type="submit" name="B_Login" value="Log in">
+    <a href="{{ path('app_signInPage') }}"><Button type="button">Sign in</Button></a>
+</form>
+    {% if warning %}
+        ERROR: {{ warning }}
+    {% endif %}
+</body>
+</html>

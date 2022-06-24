@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Message list</title></head>
+<body>
+<h2 style="font-weight: normal;">Welcome, <b>{{ username }}</b>!</h2>
+
+<a href="{{ path('app_ProfilePage') }}"><Button>Alter Profile</Button></a>
+<form action="/loggedIn" method="POST">   
+    <input type="submit" name="b_formMessage" value="Show all">
+    <input type="submit" name="b_formMessage" value="Show mine">
+    <input type="submit" name="b_formMessage" value="Post">
+    <br><input type="text" name="text_1" value=""> - message
+    <!-- <input type="submit" name="b_formMessage" value="Log out form"> -->
+</form>
+<a href="{{ path('app_logoutPage') }}"><Button>Log out</Button></a>
+
+{% if chats %}
+  <br>Chatting rooms
+  {% for chat in chats %} 
+      <br>
+      <a href="{{ path('app_ChatPage', {id: chat.id}) }}">
+      <Button>
+      {% if chat.title %} {{ chat.title }}
+      {% else %} chat #{{ chat.id }}
+      {% endif %}
+      </Button>
+      </a>
+  {% endfor %}
+{% endif %}
+
+{% if notification %} <br>{{ notification }} {% endif %}
+{% if messages %}
+    <p><br>{{ messageLabel }}:
+{% for message in messages %}
+    <br><b>{{ message.name }}</b>: {{ message.content }}
+{% endfor %}
+    </p>
+{% endif %}
+</body>
+</html>
+
