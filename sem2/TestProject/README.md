@@ -9,7 +9,7 @@
 3. чаты (chat/Chat);
 4. история имен пользователей (username_record/UsernameRecord);
 5. системные ошибки (error_code/ErrorCode);
-6. связка юзер-чат (user_chat_list/UserChatList)).  
+6. связка юзер-чат (user_chat_list/UserChatList).  
 [схема БД](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/FinalProjectDS.png)  
   
 **Краткая характеристика системы**   
