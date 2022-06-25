@@ -53,4 +53,24 @@
   
 **Демонстрация работы заявленного функционала**  
 Далее представлен список ситуаций, возникающих в ходе использование возможностей сайта, с прикрепленными скриншотами их демонстрации:  
-1. 
+1. начальная страница:
+    1. [общий вид](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/1_StartingPage.png)
+    2. [неверный логин](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/2_LoginDenied.png)
+    3. [неверный пароль](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/3_PasswordDenied.png)
+2. окно создание профиля:
+    1. [общий вид](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/4_SignInPage.png)
+3. рабочее пространство пользователя:
+    1. [общий вид](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/5_UserWorkSpace.png)
+    1. [все сообщения](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/6_AllMsgs.png)
+    2. [собственные сообщения](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/7_PersonalMsgs.png)
+    3. [добавление сообщения](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/8_PostingMsg.png)
+4. беседа:
+    1. [общий вид](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/9_ChatMsgs.png)
+5. личный профиль:
+    1. [общий вид](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/10_ProfileSettings.png)
+    2. [форма изменения имени](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/11_ChangingName.png)
+    3. [форма изменения пароля](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/12_ChangingPassword.png)
+    4. [пароль непринят](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/13_PswdChangeDenied.png)
+    5. [пароль непринят v2](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/14_PswdChangeDenied2.png)
+    6. [меняем имя](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/15_NameChange.png)
+    7. [имя изменено успешно](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/16_NameChangeDone.png)
