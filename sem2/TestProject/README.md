@@ -73,4 +73,7 @@
     4. [пароль непринят](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/13_PswdChangeDenied.png)
     5. [пароль непринят v2](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/14_PswdChangeDenied2.png)
     6. [меняем имя](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/15_NameChange.png)
-    7. [имя изменено успешно](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/16_NameChangeDone.png)
+    7. [имя изменено успешно](https://github.com/AlShProgin/imageSource/blob/main/FinalProject_SS/16_NameChangeDone.png)  
+  
+## Прочее
+Главной из личных претензий к проекту является слабое "сокрытие" логики приложения в подходящих для этого абстракциях. Так, созданные doctrine репозитории объектов никак не подстроены под нужны приложения и используются лишь для базового общего поиска и поиска по полям. Добавление, изменение, валидация и поиск по прочим фильтрам выполняются в контроллерах в "развернутом" виде, что сильно усложняет восприятие кода там, где этого возникать не должно.
